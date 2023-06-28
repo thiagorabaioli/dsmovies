@@ -11,7 +11,7 @@ import tfr.dsmovies.entities.User;
 import tfr.dsmovies.repositories.UserRepository;
 
 @SpringBootApplication
-public class DsmoviesApplication implements CommandLineRunner{
+public class DsmoviesApplication {
 	
 	@Autowired
 	private UserRepository userRepo;
@@ -20,14 +20,7 @@ public class DsmoviesApplication implements CommandLineRunner{
 		SpringApplication.run(DsmoviesApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		
-		User user1 = new User(null, "sssss@gg.com");
-		
-		userRepo.saveAll(Arrays.asList(user1));
-		
-	}
+	
 	
 	
 

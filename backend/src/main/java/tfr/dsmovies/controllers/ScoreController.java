@@ -3,6 +3,7 @@ package tfr.dsmovies.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import tfr.dsmovies.entities.dto.MovieDTO;
 import tfr.dsmovies.entities.dto.ScoreDTO;
-import tfr.dsmovies.services.MovieService;
 import tfr.dsmovies.services.ScoreService;
 
 @RestController
